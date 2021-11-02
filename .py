@@ -20,7 +20,7 @@ enter_link = Entry(window, width=50, font=35, textvariable=link,bd=4).pack(padx=
 
 def downloader():
     url = YouTube(str(link.get()))
-    videos=url.streams.first()
+    videos=url.streams.filter(res="720p").first()
     videos.download()
 
     Label(window, text="Downloaded!!",font="arial 45 bold",bg="lightpink",fg="black").pack(padx=5,pady=15)
