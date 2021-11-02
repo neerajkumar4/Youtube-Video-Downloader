@@ -1,2 +1,2 @@
 # Youtube-Video-Downloader
-This is a python project using PyTUbe and Tkinter Module.
+This is a python project using PyTube and Tkinter Module.
